@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bac 2026</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-out forwards;
+        }
+
+        img {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 30px;
+            border: 3px solid #2c3e50;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            transform: translateY(-50px);
+            opacity: 0;
+            animation: fadeInUp 1.2s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #34495e;
+            max-width: 600px;
+            animation: fadeIn 1.5s ease-out forwards;
+            opacity: 0;
+            animation-delay: 1s;
+        }
+
+        .tounsi {
+            font-weight: bold;
+            color: #d63333;
+            margin-top: 20px;
+            font-size: 1.2em;
+            animation: fadeIn 1.5s ease-out forwards;
+            opacity: 0;
+            animation-delay: 2s;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* إضافة حركة خفيفة عند تمرير الماوس على الصورة */
+        img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bac 2026 🎓</h1>
+
+    <!-- صورة تمثيلية لشهادة الباك -->
+    <img src="https://i.ibb.co/6N6JxPN/bac-certificate.png" alt="Baccalaureate Certificate">
+
+    <!-- النص الإنجليزي المؤثر -->
+    <p>
+        To everyone who scans this code:<br><br>
+        We did not reach this point easily,<br>
+        but we reached it through perseverance.<br><br>
+        If you are still on the journey,<br>
+        remember this:<br>
+        <strong>the beginning is hard, but the ending is worth it.</strong><br><br>
+        Keep going.<br>
+        The Baccalaureate is not a dream,<br>
+        it is a step.
+    </p>
+
+    <!-- الجملة بالدارجة التونسية -->
+    <p class="tounsi">الباك ما يوقف حد، شدّ روحك ووريهم شكون أنت!</p>
+</body>
+</html>
